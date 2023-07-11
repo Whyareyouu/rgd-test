@@ -17,7 +17,7 @@ const TrainCharacteristics: React.FC<TrainCharacteristicsProps> = ({tableData, h
         <table>
             <TableHeader headers={headers}/>
             <tbody>
-            {tableData.map((data, index) => <TableRow key={index.toString(16)} rowData={data}/>)}
+            {tableData.map((data, index) => <TableRow key={index.toString(16)} index={index} rowData={data}/>)}
             </tbody>
         </table>
     );

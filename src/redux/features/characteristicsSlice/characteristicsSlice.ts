@@ -11,7 +11,6 @@ export const characteristicsSlice = createSlice({
         },
         changeCharacteristic: (state, action: PayloadAction<{ index: number, name: string, newValue: number }>) => {
             const {index, name, newValue} = action.payload;
-            console.log(index, name, newValue);
             //@ts-ignore
             state[index][name] = newValue;
             return state;

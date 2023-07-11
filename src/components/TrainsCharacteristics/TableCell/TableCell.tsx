@@ -21,7 +21,7 @@ const TableCell: React.FC<TableProps> = ({value, name, index}) => {
             setError(errors);
         } else {
             setError('');
-            dispatch(changeCharacteristic({index: 0, name, newValue: Number(value)}))
+            dispatch(changeCharacteristic({index: index, name, newValue: Number(value)}))
         }
     }
     return (

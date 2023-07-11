@@ -4,13 +4,14 @@ import TableCell from "../TableCell/TableCell";
 
 type TableRowProps = {
     rowData: TTrainCharacteristics;
+    index: number;
 }
 
-const TableRow: React.FC<TableRowProps> = ({rowData}) => {
+const TableRow: React.FC<TableRowProps> = ({rowData, index}) => {
     return (
         <tr>
-            {Object.entries(rowData).map((row, index) => <TableCell key={row[1]} index={index} value={row[1]}
-                                                                    name={row[0]}/>)}
+            {Object.entries(rowData).map((row) => <TableCell key={row[1]} index={index} value={row[1]}
+                                                             name={row[0]}/>)}
         </tr>
     );
 };

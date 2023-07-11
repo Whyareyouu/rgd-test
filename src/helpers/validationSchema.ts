@@ -6,7 +6,7 @@ export function ValidationSchema(value: string, name: string): string | null {
             return 'Значение должно быть целым числом';
         }
     }
-    if (name === 'force' && !Number.isInteger(+value)){
+    if (name === 'force' && Number.isInteger(+value)){
         return 'Значение должно быть числом с плавающей запятой;'
     }
     return null
