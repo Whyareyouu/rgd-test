@@ -11,7 +11,7 @@ type TableRowProps = {
 const TableRow: React.FC<TableRowProps> = ({rowData, columns, setTrainC}) => {
     return (
         <tr onClick={() => setTrainC(rowData)}>
-            {columns.map(column => <TableCell value={rowData[column.key]}/>)}
+            {columns.map(column => <TableCell key={rowData[column.key]} value={rowData[column.key]}/>)}
         </tr>
     );
 };

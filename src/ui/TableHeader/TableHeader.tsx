@@ -8,7 +8,7 @@ const TableHeader: React.FC<TableHeaderProps> = ({headers}): React.JSX.Element =
         <thead>
         <tr>
             {headers.map(header => (
-                <th>{header}</th>
+                <th key={header}>{header}</th>
             ))}
         </tr>
         </thead>
