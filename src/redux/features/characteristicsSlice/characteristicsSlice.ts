@@ -11,8 +11,7 @@ export const characteristicsSlice = createSlice({
         },
         changeCharacteristic: (state, action: PayloadAction<{ index: number, name: string, newValue: number }>) => {
             const {index, name, newValue} = action.payload;
-            //@ts-ignore
-            state[index][name] = newValue;
+            state[index][name as keyof TTrainCharacteristics] = newValue;
             return state;
         },
         clearCharacteristics: (state) => {

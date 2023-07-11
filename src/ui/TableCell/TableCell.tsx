@@ -1,7 +1,7 @@
 import React from 'react';
 
 type TableProps = {
-    value: number;
+    value: string;
 }
 
 const TableCell: React.FC<TableProps> = ({value}) => {
