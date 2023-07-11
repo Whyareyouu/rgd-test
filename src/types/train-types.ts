@@ -1,4 +1,4 @@
-export type TrainCharacteristics = {
+export type TTrainCharacteristics = {
     speed: number;
     force: number;
     engineAmperage: number;
@@ -6,5 +6,5 @@ export type TrainCharacteristics = {
 export type TTrain = {
     name: string;
     description: string;
-    characteristics: TrainCharacteristics[];
+    characteristics: TTrainCharacteristics[];
 }

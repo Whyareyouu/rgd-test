@@ -1,1 +1,2 @@
-export {default as Table} from './Table/Table';
+export {default as TrainsTable} from './TrainsTable/TrainsTable';
+export {default as TrainsCharacteristics} from './TrainsCharacteristics/TrainsCharacteristis'
