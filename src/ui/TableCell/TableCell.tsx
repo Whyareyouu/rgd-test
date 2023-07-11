@@ -1,16 +1,13 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 type TableProps = {
     value: number;
-    type: 'trains' | 'characteristics'
 }
 
-const TableCell: React.FC<TableProps> = ({value, type = "trains"}) => {
-    const [state, setState] = useState<number>(value);
+const TableCell: React.FC<TableProps> = ({value}) => {
     return (
         <td>
-            {type === 'trains' ? <>{value}</> :
-                <input value={state} onChange={(e) => setState(parseInt(e.target.value))}/>}
+            {value}
         </td>
     );
 };
