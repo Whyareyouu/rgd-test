@@ -19,7 +19,9 @@ const TableCell: React.FC<TableProps> = ({value, name, index}) => {
     const dispatch = useAppDispatch();
 
     useEffect(() => {
-        dispatch(characteristicsError({name: `${name}-${index}`, error}));
+        const errors = ValidationSchema(state, name);
+        setError(errors);
+        dispatch(characteristicsError({name: `${name}-${index}`, error: errors}));
     }, [error]);
 
 
