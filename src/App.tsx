@@ -21,8 +21,10 @@ function App() {
     }
 
     return (
-        <div className={'container'}>
-            <TrainsTable tableData={trains.trains} headers={['Название', 'Описание']} columns={trainColumns}/>
+        <div>
+            <div className={'container'}>
+                <TrainsTable tableData={trains.trains} headers={['Название', 'Описание']} columns={trainColumns}/>
+            </div>
         </div>
     );
 }

@@ -1,5 +1,11 @@
-.table {
+.table_container {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
     max-width: 40%;
+}
+
+.table {
     width: 100%;
     border-collapse: collapse;
 }

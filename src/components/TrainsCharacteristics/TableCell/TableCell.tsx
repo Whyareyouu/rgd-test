@@ -35,8 +35,7 @@ const TableCell: React.FC<TableProps> = ({value, name, index}) => {
     }
     return (
         <td>
-            <Input value={state} onChange={(e) => handleChangeInput(e.target.value)} error={!!error}/>
-            {error && <span style={{color: 'red'}}>{error}</span>}
+            <Input value={state} onChange={(e) => handleChangeInput(e.target.value)} error={error}/>
         </td>
     );
 };

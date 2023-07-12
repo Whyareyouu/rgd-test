@@ -1,6 +1,5 @@
 .characteristics_table {
-    max-width: 40%;
-    width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
 }

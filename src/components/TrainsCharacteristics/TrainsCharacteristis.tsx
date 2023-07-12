@@ -9,9 +9,10 @@ import './Table.styles.css'
 type TrainCharacteristicsProps = {
     tableData: TTrainCharacteristics[];
     headers: string[];
+    currentTrain: string;
 }
 
-const TrainCharacteristics: React.FC<TrainCharacteristicsProps> = ({tableData, headers}): React.JSX.Element => {
+const TrainCharacteristics: React.FC<TrainCharacteristicsProps> = ({tableData, headers, currentTrain}): React.JSX.Element => {
     const dispatch = useAppDispatch();
     const characteristics = useAppSelector(state => state.characteristics);
     useEffect(() => {
@@ -29,7 +30,8 @@ const TrainCharacteristics: React.FC<TrainCharacteristicsProps> = ({tableData, h
     };
 
     return (
-        <div>
+        <div className={'table_container'}>
+            <h2>Характеристики <br/> {currentTrain}</h2>
             <table className={'characteristics_table'}>
                 <TableHeader headers={headers}/>
                 <tbody>
