@@ -1,4 +1,5 @@
 ![image](https://github.com/Whyareyouu/rgd-test/assets/54592995/7f134be5-3801-4662-b1f2-788f18d46b5a)
+# Ссылка на приложение: https://rgd-test.vercel.app/
 
 # Инструкци по запускку проекта:
 1) Склонируйте репозиторий:
