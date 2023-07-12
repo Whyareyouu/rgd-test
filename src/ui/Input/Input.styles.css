@@ -1,0 +1,16 @@
+input {
+    padding: 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    border: transparent;
+    border-radius: 3px;
+}
+
+input:focus {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #007bff;
+}
+.error {
+    border: 1px solid red;
+}

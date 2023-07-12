@@ -1,15 +1,16 @@
 import React from 'react';
 
-type TableProps = {
+type TableCellProps = {
     value: string;
+    className?: string
 }
 
-const TableCell: React.FC<TableProps> = ({value}) => {
+const TableCell = ({value, className}: TableCellProps):React.JSX.Element => {
     return (
-        <td>
+        <td className={className}>
             {value}
         </td>
     );
 };
 
-export default TableCell;
+export default React.memo(TableCell);

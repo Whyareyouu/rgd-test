@@ -1,4 +1,5 @@
 export function ValidationSchema(value: string, name: string): string | null {
+    if(value.length === 0) return 'Значение не может быть пустым';
     if (isNaN(Number(value))) return 'Недопустимое значение';
     if (Number(value) < 0) return 'Значение не может быть отрицательным';
     if (name === 'speed' || name === 'engineAmperage') {

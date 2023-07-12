@@ -15,4 +15,4 @@ const TableHeader: React.FC<TableHeaderProps> = ({headers}): React.JSX.Element =
     );
 };
 
-export default TableHeader;
+export default React.memo(TableHeader);

@@ -1,6 +1,6 @@
 import React from 'react';
-import TableCell from "../../../ui/TableCell/TableCell";
 import {TTrain} from "../../../types/train-types";
+import {TableCell} from "../../../ui";
 
 type ColumnType = Omit<TTrain, 'characteristics'>
 

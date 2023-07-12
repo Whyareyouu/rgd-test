@@ -16,4 +16,4 @@ const TableRow: React.FC<TableRowProps> = ({rowData, index}) => {
     );
 };
 
-export default TableRow;
+export default React.memo(TableRow);
