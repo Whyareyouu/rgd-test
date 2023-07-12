@@ -1,13 +1,17 @@
 ![image](https://github.com/Whyareyouu/rgd-test/assets/54592995/7f134be5-3801-4662-b1f2-788f18d46b5a)
 
-## Available Scripts
+# Инструкци по запускку проекта:
+- Склонируйте репозиторий:
+Откройте командную строку (терминал) и перейдите в папку, в которую вы хотите склонировать репозиторий.
+Выполните команду git clone <URL репозитория>, где <URL репозитория> - ссылка на репозиторий GitHub. Например: git clone https://github.com/username/repository.git
+Git склонирует репозиторий в выбранную папку на вашем компьютере.
+- Перейдите в папку проекта:
 
-In the project directory, you can run:
+В командной строке (терминале) перейдите в папку, которую Git только что склонировал. Например: cd repository (где repository - имя папки, созданной после клонирования).
+Установите зависимости проекта:
 
-### `npm install | npm run start `
+- Выполните команду npm install или yarn install, чтобы установить все зависимости, указанные в файле package.json.
+Запустите приложение:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+После успешной установки зависимостей выполните команду npm start или yarn start, чтобы запустить React-приложение.
+Приложение будет доступно по адресу http://localhost:3000 в вашем веб-браузере.
